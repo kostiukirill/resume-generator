@@ -1,0 +1,122 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id           String @id
+  name         String
+  email        String
+  password     String
+  aboutMe      AboutMe[]
+  mySkills     MySkills[]
+  myProject    MyProject[]
+  myExperience MyExperience[]
+  myBiography  MyBiography[]
+  myBlog       MyBlog[]
+  myContacts   MyContacts[]
+  Courses      Courses[]
+}
+
+model MyExperience {
+  uniqueId         String @id @default(uuid())
+  dateStart        DateTime
+  dateStop         DateTime
+  nameCompany      String
+  position         String
+  responsibilities String
+  createdAt        DateTime?
+  updatedAt        DateTime?
+  admin            Admin @relation(fields: [adminId], references: [id])
+  adminId          String
+}
+
+model AboutMe {
+  uniqueId    String @id @default(uuid())
+  name        String
+  job         String
+  greeting    String
+  description String
+  photo       String
+  createdAt   DateTime?
+  updatedAt   DateTime?
+  admin       Admin @relation(fields: [adminId], references: [id])
+  adminId     String
+}
+
+model MySkills {
+  uniqueId       String @id @default(uuid())
+  typeOfSkill    String
+  focusOfSkill   String
+  nameOfSkill    String
+  statusLearning Boolean 
+  statusDone     Boolean 
+  statusNotDone  Boolean 
+  createdAt      DateTime?
+  updatedAt      DateTime?
+  admin          Admin @relation(fields: [adminId], references: [id])
+  adminId        String
+}
+
+model MyProject {
+  uniqueId    String @id @default(uuid())
+  projectName String
+  projectLink String
+  screenLink  String
+  createdAt   DateTime?
+  updatedAt   DateTime?
+  admin       Admin @relation(fields: [adminId], references: [id])
+  adminId     String
+}
+
+model MyBiography {
+  uniqueId    String @id @default(uuid())
+  nameCity    String
+  birthDay    DateTime
+  nameCollege String
+  yearStop    String?
+  createdAt   DateTime?
+  updatedAt   DateTime?
+  admin       Admin @relation(fields: [adminId], references: [id])
+  adminId     String
+}
+
+model Courses {
+  uniqueId   String @id @default(uuid())
+  nameSchool String
+  profession String?
+  stack      String?
+  start      DateTime
+  stop       DateTime?
+  createdAt  DateTime?
+  updatedAt  DateTime?
+  admin      Admin @relation(fields: [adminId], references: [id])
+  adminId    String
+}
+
+model MyBlog {
+  uniqueId  String @id @default(uuid())
+  descr     String
+  mediaLink String?
+  createdAt DateTime?
+  updatedAt DateTime?
+  admin     Admin @relation(fields: [adminId], references: [id])
+  adminId   String
+}
+
+model MyContacts {
+  uniqueId    String @id @default(uuid())
+  nameContact String
+  linkContact String
+  createdAt   DateTime?
+  updatedAt   DateTime?
+  admin       Admin @relation(fields: [adminId], references: [id])
+  adminId     String
+}
