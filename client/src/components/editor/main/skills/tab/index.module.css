@@ -1,0 +1,27 @@
+.skills_list {
+    padding-left: 20px;
+}
+
+.tab {
+    padding-left: 100px;
+}
+
+.tab_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.skills_list__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    
+}
+
+

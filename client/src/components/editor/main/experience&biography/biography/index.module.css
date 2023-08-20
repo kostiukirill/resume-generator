@@ -1,0 +1,46 @@
+.bio_block {
+    background: transparent;
+}
+
+.bio_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.bio_block_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.course_block {
+    margin-bottom: 60px;
+    width: 280px;
+}
+.course_block_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+
+ .bio_block_descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+ }
+
+ .bio_block_div {
+    margin-bottom: 40px;
+    width: 400px;
+ }

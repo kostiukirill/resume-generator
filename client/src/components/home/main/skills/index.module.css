@@ -1,0 +1,24 @@
+.main_mySkills {
+    padding: 69px 320px;
+    display: flex;
+    height: 1210px;
+    scroll-snap-align: start;
+}
+
+.tab__active {
+    padding-left: 100px;
+}
+
+.tab__dnone {
+    display: none;
+}
+
+
+@keyframes tabSlide {
+    from{
+        transform: translateX(10000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

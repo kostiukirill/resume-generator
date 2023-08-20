@@ -1,0 +1,65 @@
+.main_menu {
+    border-right: 1px solid #610094;
+    width: 635px;
+}
+
+.pidor {
+    color: crimson;
+}
+
+.mySkills_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.tab_list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: start;
+}
+
+.button_tag {
+    background: inherit;
+    border: none;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.button_tag:hover {
+    
+    color: #610094;
+    transform: translateX(10px);
+}
+
+.button_tab__active {
+    background: inherit;
+    border: none;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    color: #610094;
+    transform: translateX(10px);
+}
+
+.skill_type {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}

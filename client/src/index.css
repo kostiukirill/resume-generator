@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+  background-color: black;
+  /* max-width: 1920px; */
+  margin-inline: auto;
+  position: relative;
+}
+
+.root{
+  position: relative;
+}
+

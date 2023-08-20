@@ -1,0 +1,180 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 69px 320px 69px 320px;
+    height: 1210px;
+}
+
+.hero_name, .hero_job, .hero_greeting {
+    margin-bottom: 40px;
+}
+
+.hero_name {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 83px;
+    letter-spacing: 0.1em;
+    animation: fromLToR 1s ease-in-out ;
+}
+
+.hero_job {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    animation: fromLToR 1.4s ease-in-out ;
+}
+
+.hero_greeting {
+    width: 650px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    white-space: pre-line;
+    animation: fromLToR 1.8s ease-in-out ;
+}
+
+.hero_description {
+    width: 1095px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    white-space: pre-line;
+    margin-bottom: 150px;
+    animation: fromLToR 2.4s ease-in-out ;
+}
+
+.button_call {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-inline: 40px;
+    width: 297px;
+    height: 70px;
+    background: #3F0071;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    border: none;
+    transition: all .2s ease-in;
+    animation: fromLToR 3s ease-in-out, buttonCall .6s ease 5s infinite alternate;
+}
+
+.button_call:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    background-color: #150050;
+}
+
+@keyframes fromLToR {
+    from {
+        transform: translateX(-10000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.hero_name__toL {
+    transform: rotate(270deg);
+}
+
+.button_call__fixed {
+    background: #3F0071;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    border: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    border-radius: 100%;
+    right: 100px;
+    bottom: 100px;
+    z-index: 1000;
+    animation: scrollButton 1s ease-in-out, pulseButton .6s ease infinite alternate;
+}
+
+.button_call__fixed span{
+    display: none;
+}
+
+.button_call__fixed svg{
+    animation: buttonCall .6s ease 5s infinite alternate;
+}
+
+.button_call__fixed:hover,
+.button_call__fixed:hover svg {
+    animation-play-state: paused;
+}
+
+@keyframes pulseButton {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.06);
+    }
+
+    
+}
+
+@keyframes scrollButton {
+    from {
+        right: 1200px;
+        bottom: 400px;
+    }
+    to{
+        right: 100px;
+        bottom: 100px;
+    }
+}
+
+@keyframes buttonCall {
+    5% {
+        transform: rotate(2deg);
+    }
+    10% {
+        transform: rotate(-2deg);
+    }
+    15% {
+        transform: rotate(2deg);
+    }
+    20% {
+        transform: rotate(-2deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    30% {
+        transform: rotate(-2deg);
+    }
+    35% {
+        transform: rotate(2deg);
+    }
+    40% {
+        transform: rotate(-2deg);
+    }
+    45% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+   
+    100% {
+        transform: none;
+    }
+}

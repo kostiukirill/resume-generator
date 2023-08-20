@@ -1,0 +1,30 @@
+.post{
+    width: 1000px;
+    background: #150050;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+}
+.post_img {
+    width: 325px;
+    height: 400px;
+}
+.post_descr, .post_time {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    margin-right: 40px;
+
+}
+.post_time {
+    color: #939393;
+    position: relative;
+    left: 700px;
+}
+
+.post_content {
+    display: flex;
+    justify-content: space-between;
+}

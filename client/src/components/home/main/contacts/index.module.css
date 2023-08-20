@@ -1,0 +1,20 @@
+.contacts {
+    padding: 69px 320px 69px 320px;
+    border-bottom: 1px solid #610094;
+}
+
+.contacts_flexcont {
+    display: flex;
+}
+
+.contacts_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.contacts_left {
+    margin-right: 150px;
+}

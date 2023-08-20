@@ -1,0 +1,18 @@
+.myBlog{
+    padding: 69px 320px;
+    background: rgba(63, 0, 113, 0.4);
+    backdrop-filter: blur(7.5px);    
+    
+}
+.myBlog_posts {
+    height: 1210px;
+    overflow-y: scroll;
+}
+.myBlog_title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}

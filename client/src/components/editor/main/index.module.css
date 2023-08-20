@@ -1,0 +1,29 @@
+.main {
+    background: url('http://kostiuresph.webtm.ru/photos/backPhoto.jpg');
+    background-position: right 15% top 20%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-attachment: fixed;
+    animation: fromRToL 3s ease-in-out;
+    overflow-x: hidden;
+    scroll-snap-type: y proximity;
+}
+
+.experience_and_bio_section {
+    display: flex;
+}
+
+.experience_and_bio_section {
+    padding: 69px 320px 69px 320px;
+    display: flex;
+}
+
+@keyframes fromRToL {
+    from {
+        background-position: left 200% top 20%;
+    }
+    to{
+        background-position: right 15% top 20%;
+    }
+}

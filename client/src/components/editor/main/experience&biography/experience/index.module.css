@@ -1,0 +1,32 @@
+.myExp {
+    width: 1000px;
+    border-right: 1px solid #610094;
+    margin-right: 100px;
+}
+.myExp_block {
+    margin-bottom: 70px;
+}
+.myExp_subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;    
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.myExp_desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+.myExp_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px
+
+}

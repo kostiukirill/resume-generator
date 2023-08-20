@@ -1,0 +1,7 @@
+.footer_logo {
+    transition: transform .2s ease-in-out;
+}
+
+.footer_logo:hover {
+    transform: scale(1.1) translateY(-3px);
+}

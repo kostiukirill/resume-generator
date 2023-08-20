@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Poppins:wght@500&display=swap');
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #000000;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #610094;
+    padding: 15px 240px 0 240px;
+    align-items: center;
+    z-index: 9999;
+}
+
+.header_logo {
+    transition: transform .2s ease-in-out;
+}
+
+.header_logo:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+.header_a__login {
+    background: inherit;
+    border: none;
+    
+}
+
+.header_a__login svg path{
+    transition: fill .1s ease-in-out
+}
+
+.header_a__login .arrow{
+    transition: transform .2s ease-in-out;
+}
+
+.header_a__login:hover svg path{
+    fill: #610094;
+}
+
+.header_a__login:hover .arrow{
+    transform: translateX(-5px);
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1147px;
+}
+
+.header_navlink {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    transition: color .1s ease-in-out, transform .2s ease-in-out;
+}
+
+.header_navlink:hover {
+    color: #610094;
+    transform: translateY(-5px) scale(1.1);
+}
+
+
+

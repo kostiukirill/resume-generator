@@ -1,0 +1,89 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 69px 320px 69px 320px;
+    height: 1210px;
+}
+
+.hero_name_input, .hero_job_input, .hero_greeting_input, .hero_description_input {
+    margin-bottom: 40px;
+    border: 1px solid #ffffff;
+    width: fit-content;
+    
+}
+
+.hero_name_input {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 83px;
+    letter-spacing: 0.1em;
+    background: transparent;
+    width: 600px;
+}
+
+.hero_job_input {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    background: transparent;
+    width: 400px;
+
+}
+
+.hero_greeting_input {
+    width: 650px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    white-space: pre-line;
+    background: transparent;
+    width: 700px;
+}
+
+.hero_description_input {
+    width: 1095px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    white-space: pre-line;
+    margin-bottom: 150px;
+    background: transparent;
+    width: 1200px;
+}
+
+.button_call {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-inline: 40px;
+    width: 297px;
+    height: 70px;
+    background: #3F0071;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    border: none;
+
+
+}
+
+.button_call:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    background-color: #150050;
+}
+
+
+.hero_name_form {
+    display: flex;
+    flex-direction: column;
+}
